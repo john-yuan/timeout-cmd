@@ -16,7 +16,7 @@ npm i timeout-cmd --save-dev
 # sleep 2 seconds
 npx timeout-cmd 2
 
-# sleep 3 second
+# sleep 3 seconds
 npx timeout-cmd 3s
 
 # sleep 100 milliseconds
@@ -32,7 +32,7 @@ COMMAND
 EXAMPLES
   # sleep 2 seconds
   timeout-cmd 2
-  # sleep 3 second
+  # sleep 3 seconds
   timeout-cmd 3s
   # sleep 100 milliseconds
   timeout-cmd 100ms

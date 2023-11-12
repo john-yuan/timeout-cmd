@@ -8,7 +8,7 @@ if (process.argv.indexOf('-h') > -1 || process.argv.indexOf('--help') > -1) {
     'EXAMPLES',
     '  # sleep 2 seconds',
     '  timeout-cmd 2',
-    '  # sleep 3 second',
+    '  # sleep 3 seconds',
     '  timeout-cmd 3s',
     '  # sleep 100 milliseconds',
     '  timeout-cmd 100ms',
