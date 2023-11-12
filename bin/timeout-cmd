@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+if (process.argv.indexOf('-h') > -1 || process.argv.indexOf('--help') > -1) {
+  console.log([
+    'COMMAND',
+    '  timeout-cmd <time>',
+    '',
+    'EXAMPLES',
+    '  # sleep 2 seconds',
+    '  timeout-cmd 2',
+    '  # sleep 3 second',
+    '  timeout-cmd 3s',
+    '  # sleep 100 milliseconds',
+    '  timeout-cmd 100ms',
+    '',
+    '  Note: The unit can be "s" or "ms" and it is optional.',
+    '        The default unit is "s".',
+    '',
+    'OPTIONS',
+    '  --help, -h       Print this message.'
+  ].join('\n'))
+} else {
+  function parseTime(value) {
+    let ms = 0
+
+    if (typeof value === 'string') {
+      const str = value.trim().toLowerCase()
+
+      if (/ms$/.test(str)) {
+        ms = +str.replace(/ms$/, '').replace(/[^\d]/g, '')
+      } else {
+        ms = +str.replace(/s$/, '').replace(/[^\d]/g, '')
+        ms *= 1000
+      }
+
+      ms = isNaN(ms) ? 0 : ms
+    }
+
+    return ms
+  }
+
+  setTimeout(function() {}, parseTime(process.argv[2]));
+}
