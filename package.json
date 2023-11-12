@@ -1,6 +1,6 @@
 {
   "name": "timeout-cmd",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "A command to sleep for specified time.",
   "main": "index.js",
   "files": [
@@ -16,5 +16,9 @@
   },
   "keywords": ["sleep", "timeout", "pause", "delay"],
   "author": "john-yuan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-yuan/timeout-cmd"
+  },
   "license": "MIT"
 }

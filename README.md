@@ -1,6 +1,14 @@
 # README
 
+[![npm version](https://img.shields.io/npm/v/timeout-cmd)](https://www.npmjs.com/package/timeout-cmd)
+[![install size](https://packagephobia.now.sh/badge?p=timeout-cmd)](https://packagephobia.now.sh/result?p=timeout-cmd)
+[![npm downloads](https://img.shields.io/npm/dm/timeout-cmd.svg)](https://npm-stat.com/charts.html?package=timeout-cmd)
+
 A command to sleep for specified time.
+
+```bash
+npm i timeout-cmd --save-dev
+```
 
 ## Usage
 
@@ -35,3 +43,7 @@ EXAMPLES
 OPTIONS
   --help, -h       Print this message.
 ```
+
+## License
+
+[MIT](./LICENSE)
