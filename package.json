@@ -1,6 +1,6 @@
 {
   "name": "timeout-cmd",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A command to sleep for specified time.",
   "main": "index.js",
   "files": [
