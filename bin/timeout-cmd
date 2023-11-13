@@ -27,10 +27,11 @@ if (process.argv.indexOf('-h') > -1 || process.argv.indexOf('--help') > -1) {
       const str = value.trim().toLowerCase()
 
       if (/ms$/.test(str)) {
-        ms = +str.replace(/ms$/, '').replace(/[^\d]/g, '')
+        ms = parseFloat(str.replace(/ms$/, '').replace(/[^\d.]/g, ''))
+        ms = Math.round(ms)
       } else {
-        ms = +str.replace(/s$/, '').replace(/[^\d]/g, '')
-        ms *= 1000
+        ms = parseFloat(str.replace(/s$/, '').replace(/[^\d.]/g, ''))
+        ms = Math.round(ms * 1000)
       }
 
       ms = isNaN(ms) ? 0 : ms
